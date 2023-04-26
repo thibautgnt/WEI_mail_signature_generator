@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature email - WEI EFREI</title>
+<meta name="description" content="Générateur de signature email WEI EFREI">
+<link rel="shortcut icon" type="image/x-icon" href="https://wei-efrei.com/images/logos/logored.png">
+<style>
+
+body {
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    background-color: rgb(23, 23, 23);
+}
+
+.container {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 15px;
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 97%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(185, 185, 185, 0.24);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    border: 1;
+    box-shadow: none;
+    background-color: rgba(229, 229, 229, 0.171);
+}
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+#preview {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    background-color: white;
+}
+
+button {
+    background-color: #d63341;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #a0252f;
+}
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+    padding-right: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #d63341;
+}
+
+.svg-icon circle {
+    stroke: #d63341;
+    stroke-width: 3;
+}
+
+/* Media queries */
+
+/* Small screens */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 40%;
+    }
+}
+
+
+    
+</style>
+</head>
+<body>
+   <div style="height: 50px;"></div>
+<div class="container">
+    <h1 style="text-align: center;">Générateur de signatures d'email WEI EFREI</h1>
+    <div class="form-group">
+        <label class="form-label" for="name">Nom :</label>
+        <input class="form-control" type="text" id="name" oninput="updatePreview()" placeholder="Prénom Nom" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="title">Titre :</label>
+        <input class="form-control" type="text" id="title" oninput="updatePreview()" placeholder="Membre Pôle Communication" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="email">Email :</label>
+        <input class="form-control" type="email" id="email" oninput="updatePreview()" placeholder="prenom.nom@wei-efrei.com" value="@wei-efrei.com" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="phone">Téléphone :</label>
+        <input class="form-control" type="tel" id="phone" oninput="updatePreview()" placeholder="+33 06 ..." value="+33 0" />
+    </div>
+    <p>Preview :</p>
+    <div id="preview">
+<table cellpadding="0" cellspacing="0"  style="width :100%; vertical-align: -webkit-baseline-middle;  font-family: Arial;">
+   <tbody>
+      <tr>
+         <td>
+            <table cellpadding="0" cellspacing="0"   style="vertical-align: -webkit-baseline-middle; font-family: Arial;">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: middle;"><span style="margin-right: 20px; display: block;"><a href="//wei-efrei.com" target="_blank"><img src="https://wei-efrei.com/images/logos/logored.png" width="100" role="presentation"></a></span></td>
+                     <td style="vertical-align: middle;">
+                        <h2 color="#000000" style="margin: 0px; color: black;"><span style="white-space: nowrap;" id="preview-name"></span></h2>
+                        <p color="#000000" style="margin-top: 5px; color: black; font-weight: 600;"><span style="white-space: nowrap;" id="preview-title"></span></p>
+                        <p color="#000000" style="margin-top: 20px; color: black;"><span style="white-space: nowrap;">WEI Efrei 2023</span></p>
+                     </td>
+
+                     <td width="20">
+                        <div style="width: 20px;"></div>
+                     </td>
+
+                     <td color="#f2547d" direction="vertical" width="1" height="auto" style="width: 1px; border-bottom: none; border-left: 1px solid #b61817;"></td>
+                     
+                     <td width="20">
+                        <div style="width: 20px;"></div>
+                     </td>
+                     
+                     <td style="vertical-align: middle;">
+                        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-family: Arial;">
+                           <tbody>
+                              <tr height="25" style="vertical-align: middle;">
+                                 <td width="30" style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-family: Arial;">
+                                       <tbody>
+                                          <tr>
+                                             <td style="vertical-align: bottom;"><span color="#f2547d" width="15" style="display: inline-block;"><img src="https://wei-efrei.com/signature/phone.png" alt="mobilePhone" width="15" class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; fill:#d63341;"></span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                                 <td style="padding: 0px; color: rgb(0, 0, 0);"><a color="#000000" style="text-decoration: none; color: rgb(0, 0, 0);  "><span style="white-space: nowrap;" id="preview-phone"></span></a></td>
+                              </tr>
+                              <tr height="25" style="vertical-align: middle;">
+                                 <td width="30" style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;   font-family: Arial;">
+                                       <tbody>
+                                          <tr>
+                                             <td style="vertical-align: bottom;"><span color="#f2547d" width="13" style="display: inline-block;"><img src="https://wei-efrei.com/signature/mail.png" color="#f2547d" alt="emailAddress" width="15" class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: transparent;"></span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                                 <td style="padding: 0px;"><a color="#000000"   style="text-decoration: none; color: rgb(0, 0, 0);  "><span style="white-space: nowrap;" id="preview-email"></span></a></td>
+                              </tr>
+                              <tr height="25" style="vertical-align: middle;">
+                                 <td width="30" style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0"   style="vertical-align: -webkit-baseline-middle;   font-family: Arial;">
+                                       <tbody>
+                                          <tr>
+                                             <td style="vertical-align: bottom;"><span color="#f2547d" width="11"   style="display: inline-block;"><img src="https://wei-efrei.com/signature/website.png" color="#f2547d" alt="website" width="15" class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: transparent;"></span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                                 <td style="padding: 0px;"><a href="//wei-efrei.com" color="#000000"   style="text-decoration: none; color: rgb(0, 0, 0);  "><span style="white-space: nowrap;">wei-efrei.com</span></a></td>
+                              </tr>
+
+                              <tr height="25" style="vertical-align: middle;">
+                                 <td width="30" style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0"   style="vertical-align: -webkit-baseline-middle;   font-family: Arial;">
+                                       <tbody>
+                                          <tr>
+                                             <td style="vertical-align: bottom;"><span color="#f2547d" width="11" style="display: inline-block; "><img src="https://wei-efrei.com/signature/adress.png" color="#f2547d" alt="address" width="15" class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: transparent;"></span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                                 <td style="padding: 0px;"><span color="#000000" style="  color: rgb(0, 0, 0);"><span style="white-space: nowrap;">30-32 Av. de la République, 94800, Villejuif</span></span></td>
+                              </tr>
+
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+    </div>
+    <button onclick="copySignature()">Copier la signature</button>
+</div>
+<br />
+<div class="container">
+
+   <h3>Comment l'ajouter à Gmail ?</h3>
+
+   <p>Sur Gmail, cliquer sur les paramètres en haut à droite<br />
+   puis "Voir tous les paramètres" et ajouter la signature vers le milieu bas de page.<br />
+   <br />
+   Les signatures ne peuvent pas être ajoutées sur mobile</p>
+
+</div>
+
+<script>
+    function updatePreview() {
+        const name = document.getElementById("name").value;
+        const title = document.getElementById("title").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+
+        document.getElementById("preview-name").innerText = name;
+        document.getElementById("preview-title").innerText = title;
+        document.getElementById("preview-email").innerText = email;
+        document.getElementById("preview-phone").innerText = phone;
+    }
+
+    function copySignature() {
+        const preview = document.getElementById("preview");
+        const range = document.createRange();
+        const selection = window.getSelection();
+
+        selection.removeAllRanges();
+        range.selectNodeContents(preview);
+        selection.addRange(range);
+
+        try {
+            document.execCommand("copy");
+            alert("La signature a été copiée.");
+        } catch (err) {
+            alert("Impossible de copier la signature. Veuillez le faire manuellement.");
+        }
+
+        selection.removeAllRanges();
+    }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
