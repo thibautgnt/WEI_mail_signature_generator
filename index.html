@@ -8,27 +8,30 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://wei-efrei.com/images/logos/logored.png">
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 body {
     font-size: small;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    font-family: 'Poppins', sans-serif;
+    /*background-image: url(background.jpg);*/
+    /*background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;*/
-    background-color: rgb(23, 23, 23);
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
-    max-width: 40vw;
+    max-width: 45vw;
     margin: 0 auto;
-    padding: 15px;
+    padding: 1%;
     backdrop-filter: blur(16px) saturate(200%);
     -webkit-backdrop-filter: blur(16px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.24);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    color: rgb(0, 0, 0);
 }
 
 .form-group {
@@ -40,18 +43,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.form-control {
-    width: 97%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(200%);
-    background-color: rgba(185, 185, 185, 0.24);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    color: white;
-}
+
 
 .form-control:focus {
     outline: none;
@@ -61,25 +53,26 @@ body {
 .form-control:hover {
     border: 1;
     box-shadow: none;
-    background-color: rgba(229, 229, 229, 0.171);
+    background-color: rgba(185, 185, 185, 0.171);
 }
 
 input[type="text"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #preview {
-    border: 1px solid #ccc;
+    border: 1px solid #dfdfdf;
     padding: 1rem;
     margin-top: 1rem;
-    border-radius: 12px;
-    background-color: white;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
 }
 
 button {
     background-color: #d63341;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -87,7 +80,25 @@ button {
     font-size: 16px;
     margin: 10px 2px;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 5px;
+}
+
+.form-control {
+  width: 96%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+       -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 button:hover {
@@ -144,6 +155,33 @@ button:hover {
 </head>
 <body>
    <div style="height: 50px;"></div>
+
+   <div class="container">
+      <h1 style="text-align: center;">Design</h1>
+      <h2>Les logos</h2>
+      <center>
+      <a target="_blank" href="images/logo_Sticker.png"><img src="images/logo_Sticker.png" alt="Logo WEI 2023" width="200"></a>
+      <a target="_blank" href="images/logo_Normal_carre.png"><img src="images/logo_Normal_carre.png" alt="Logo WEI 2023" width="200"></a>
+      <a target="_blank" href="images/logo_Bordeaux_Carre.png"><img src="images/logo_Bordeaux_Carre.png" alt="Logo WEI 2023" width="200"></a>
+      <br /><hr>
+      <a target="_blank" href="images/logo_WEIXICO_ROUGE.png"><img src="images/logo_WEIXICO_ROUGE.png" alt="Logo WEI 2023" width="200"></a>
+      <a target="_blank" href="images/logo_WEIXICO_NOIR.png"><img src="images/logo_WEIXICO_NOIR.png" alt="Logo WEI 2023" width="200"></a>
+      <a target="_blank" href="images/logo_WEIXICO_BLANC.png"><img src="images/logo_WEIXICO_BLANC.png" style="background-color: #555555; padding: 0 1%;" alt="Logo WEI 2023" width="200"></a>
+   </center>
+<hr>
+   <h2>Les couleurs</h2>
+      <div style="background-color: #E8123A; width: 100px; height: 100px; display: inline-block;"><p style="color:white; padding-left: 10%;">#E8123A</p></div>
+      <div style="background-color: #FCFF35; width: 100px; height: 100px; display: inline-block;"><p style="color:black; padding-left: 10%;">#FCFF35</p></div>
+      <div style="background-color: #FF6400; width: 100px; height: 100px; display: inline-block;"><p style="color:white; padding-left: 10%;">#FF6400</p></div>
+      <div style="background-color: #026847; width: 100px; height: 100px; display: inline-block;"><p style="color:white; padding-left: 10%;">#026847</p></div>
+   </div>
+
+
+   <br />
+
+
+
+
 <div class="container">
     <h1 style="text-align: center;">Générateur de signatures d'email WEI EFREI</h1>
     <div class="form-group">
@@ -171,7 +209,9 @@ button:hover {
             <table cellpadding="0" cellspacing="0"   style="vertical-align: -webkit-baseline-middle; font-family: Arial;">
                <tbody>
                   <tr>
-                     <td style="vertical-align: middle;"><span style="margin-right: 20px; display: block;"><a href="//wei-efrei.com" target="_blank"><img src="https://wei-efrei.com/images/logos/logored.png" width="100" role="presentation"></a></span></td>
+                     <td style="vertical-align: middle;"><span style="margin-right: 20px; display: block;"><a href="//bio.link/weiefrei" target="_blank"><img src="https://wei-efrei.com/signature/logo_Rouge_Texte_Blanc.png" width="75" role="presentation"></a></span></td>
+                     <!--<td style="vertical-align: middle;"><span style="margin-right: 20px; display: block;"><a href="//bio.link/weiefrei" target="_blank"><img src="/images/logo_Sticker.png" width="100" role="presentation"></a></span></td>-->
+
                      <td style="vertical-align: middle;">
                         <h2 color="#000000" style="margin: 0px; color: black;"><span style="white-space: nowrap;" id="preview-name"></span></h2>
                         <p color="#000000" style="margin-top: 5px; color: black; font-weight: 600;"><span style="white-space: nowrap;" id="preview-title"></span></p>
