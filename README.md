@@ -1,4 +1,7 @@
 # WEI EFREI mail signature generator
  WEI EFREI mail signature generator
 
-![image](https://user-images.githubusercontent.com/94045978/234672238-9c94ff73-00f1-475d-bcf3-b908ac99aa1c.png)
+![image](https://github.com/thibautgnt/WEI_mail_signature_generator/assets/94045978/883228ea-1d9e-4ac7-96e6-3687f0b1aae7)
+
+![image](https://github.com/thibautgnt/WEI_mail_signature_generator/assets/94045978/a83bf7c7-0e77-4705-b11a-d20f0dfc7196)
+
